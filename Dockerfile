@@ -24,7 +24,7 @@ RUN yum install -y npm nodejs
 RUN npm install -g log.io --user "root"
 
 # 5. Add in the .log.io directory
-ADD conf/harvester.conf		/root/.log.io/harvester.conf
+ADD conf/harvester.conf		  /root/.log.io/harvester.conf
 ADD conf/log_server.conf		/root/.log.io/log_server.conf
 ADD conf/web_server.conf		/root/.log.io/web_server.conf
 
