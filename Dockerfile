@@ -16,7 +16,7 @@ MAINTAINER Yongbok Kim <ruo91@yongbok.net>
 RUN sed -i 's/mirrorlist/\#mirrorlist/g' /etc/yum.repos.d/CentOS-Base.repo
 RUN sed -i 's/#baseurl\=http\:\/\/mirror.centos.org/baseurl\=http\:\/\/mirror.cdnetworks.com/g' /etc/yum.repos.d/CentOS-Base.repo
 
-# 3. Add the epel, spacewalk, jpackage repository
+# 3. Add the epel repository
 RUN rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
 # 4. Installation a log.io
